@@ -1,0 +1,107 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #1fbe2a;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    label {
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+  
+    input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      padding: 10px;
+      
+    }
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    transition: all 0.2s ease-in-out;
+  
+    &.btn-primary {
+      background-color: #db1010;
+      color: #fff;
+  
+      &:hover {
+        background-color: #de3f3f;
+      }
+    }
+  
+    &.btn-secondary {
+      background-color: #47148f;
+      color: #fff;
+  
+      &:hover {
+        background-color: #6533ab;
+      }
+    }
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+    // Estilos para pantallas pequeñas (menores de 768px)
+    @media (max-width: 650px) {
+      h1 {
+        font-size: 2.0rem;
+        font-weight: 500;
+      }
+  
+      input {
+        width: 60%;
+      }
+    }
+  
+    // Estilos para pantallas medianas (entre 768px y 991px)
+    @media (min-width: 651px) and (max-width: 1000px) {
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+  
+      input {
+        width: 80%;
+      }
+    }
+  
+    // Estilos para pantallas grandes (mayores de 992px)
+    @media (min-width: 1001px) {
+      h1 {
+        font-size: 3.0rem;
+        font-weight: 700;
+      }
+  
+      input {
+        width: 100%;
+      }
+    }
