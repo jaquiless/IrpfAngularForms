@@ -2,14 +2,14 @@
  
 <form class="container" [formGroup]="form">
   <div class="form-group">
-    <h2>Annual income</h2>
-    <label for="annual-income">Annual income:</label>
+    <h2>Annual income:</h2>
+    <label for="annual-income"></label>
     <input type="number" id="annual-income" formControlName="annualIncome" class="form-control" placeholder="Annual income">
   </div>
 
   <div class="form-group">
-    <h2>Personal pension plan</h2>
-    <label for="personal-plan">Personal pension plan:</label>
+    <h2>Personal pension plan:</h2>
+    <label for="personal-plan"></label>
     <input type="number" id="personal-plan" formControlName="personalPlan" class="form-control" placeholder="Euros">
     <span *ngIf="this.form.get('personalPlan')?.errors?.['max']" style="color: red">
       The number cannot be greater than 1500
@@ -17,8 +17,8 @@
   </div>
 
   <div class="form-group">
-    <h2>Company pension plan</h2>
-    <label for="company-plan">Company pension plan:</label>
+    <h2>Company pension plan:</h2>
+    <label for="company-plan"></label>
     <input type="number" id="company-plan" formControlName="businessPlan" class="form-control" placeholder="Euros">
     <span *ngIf="this.form.get('businessPlan')?.errors?.['max']" style="color: red">
       The number cannot be greater than 8500
