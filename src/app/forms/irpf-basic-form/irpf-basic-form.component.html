@@ -1,27 +1,56 @@
 <h1>IRPF calculation with a Basic form</h1>
- 
+
 <form class="container">
   <div class="form-group">
     <h2>Annual income:</h2>
     <label for="annual-income"></label>
-    <input type="number" id="annual-income" name="annualIncome" [(ngModel)]="annualIncome" class="form-control" placeholder="Annual income">
+    <input
+      type="number"
+      id="annual-income"
+      name="annualIncome"
+      [(ngModel)]="annualIncome"
+      class="form-control"
+      placeholder="Annual income"
+    />
   </div>
 
   <div class="form-group">
     <h2>Personal pension plan:</h2>
     <label for="personal-plan"></label>
-    <input type="number" id="personal-plan" name="personalPlan" [(ngModel)]="personalPlan" class="form-control" min="0" max="1500" placeholder="Euros">
+    <input
+      type="number"
+      id="personal-plan"
+      name="personalPlan"
+      [(ngModel)]="personalPlan"
+      class="form-control"
+      min="0"
+      max="1500"
+      placeholder="Euros"
+    />
   </div>
 
   <div class="form-group">
     <h2>Company pension plan:</h2>
     <label for="company-plan"></label>
-    <input type="number" id="company-plan" name="businessPlan" [(ngModel)]="businessPlan" class="form-control" min="0" max="8500" placeholder="Euros">
+    <input
+      type="number"
+      id="company-plan"
+      name="businessPlan"
+      [(ngModel)]="businessPlan"
+      class="form-control"
+      min="0"
+      max="8500"
+      placeholder="Euros"
+    />
   </div>
 
-  <br>
-  <button type="button" class="btn btn-primary" (click)="IrpfSpain()">IRPF of Spain</button>
-  <button type="button" class="btn btn-secondary" (click)="IrpfAndorra()">IRPF of Andorra</button>
-  <br>
+  <br />
+  <button type="button" class="btn btn-primary" (click)="IrpfSpain()">
+    IRPF of Spain
+  </button>
+  <button type="button" class="btn btn-secondary" (click)="IrpfAndorra()">
+    IRPF of Andorra
+  </button>
+  <br />
   <p>You can deduct: {{ result }}</p>
 </form>

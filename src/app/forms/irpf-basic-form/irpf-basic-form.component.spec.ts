@@ -8,9 +8,8 @@ describe('IrpfBasicFormComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ IrpfBasicFormComponent ]
-    })
-    .compileComponents();
+      declarations: [IrpfBasicFormComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(IrpfBasicFormComponent);
     component = fixture.componentInstance;

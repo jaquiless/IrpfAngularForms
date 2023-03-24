@@ -2,17 +2,13 @@ import { Component } from '@angular/core';
 import { SpainIrpfCalculator } from './spainIrpfCalculator';
 import { AndorraIrpfCalculator } from './AndorraIrpfCalculator';
 
-
 @Component({
   selector: 'app-irpf-basic-form',
   templateUrl: './irpf-basic-form.component.html',
-  styleUrls: ['./irpf-basic-form.component.scss']
+  styleUrls: ['./irpf-basic-form.component.scss'],
 })
 export class IrpfBasicFormComponent {
-
-  constructor() {
-    
-    }
+  constructor() {}
 
   annualIncome: number = 0;
   personalPlan: number = 0;
@@ -21,16 +17,19 @@ export class IrpfBasicFormComponent {
 
   IrpfSpain() {
     const spainCalculator = new SpainIrpfCalculator();
-    this.result = spainCalculator.calculateSpainIrpf(this.annualIncome, this.personalPlan, this.businessPlan);
+    this.result = spainCalculator.calculateSpainIrpf(
+      this.annualIncome,
+      this.personalPlan,
+      this.businessPlan
+    );
   }
 
   IrpfAndorra() {
     const andorraCalculator = new AndorraIrpfCalculator();
-    this.result = andorraCalculator.calculateAndorraIrpf(this.annualIncome, this.personalPlan, this.businessPlan);
+    this.result = andorraCalculator.calculateAndorraIrpf(
+      this.annualIncome,
+      this.personalPlan,
+      this.businessPlan
+    );
   }
-
 }
-
-
-
-

@@ -33,7 +33,6 @@ h1 {
     border-radius: 5px;
     font-size: 1.5rem;
     padding: 10px;
-    
   }
 }
 
@@ -70,39 +69,38 @@ p {
   font-weight: bold;
 }
 
-  // Estilos para pantallas pequeñas (menores de 768px)
-  @media (max-width: 650px) {
-    h1 {
-      font-size: 2.0rem;
-      font-weight: 500;
-    }
-
-    input {
-      width: 60%;
-    }
+// Estilos para pantallas pequeñas (menores de 768px)
+@media (max-width: 650px) {
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
   }
 
-  // Estilos para pantallas medianas (entre 768px y 991px)
-  @media (min-width: 651px) and (max-width: 1000px) {
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
+  input {
+    width: 60%;
+  }
+}
 
-    input {
-      width: 80%;
-    }
+// Estilos para pantallas medianas (entre 768px y 991px)
+@media (min-width: 651px) and (max-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
   }
 
-  // Estilos para pantallas grandes (mayores de 992px)
-  @media (min-width: 1001px) {
-    h1 {
-      font-size: 3.0rem;
-      font-weight: 700;
-    }
-
-    input {
-      width: 100%;
-    }
+  input {
+    width: 80%;
   }
-  
+}
+
+// Estilos para pantallas grandes (mayores de 992px)
+@media (min-width: 1001px) {
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  input {
+    width: 100%;
+  }
+}
